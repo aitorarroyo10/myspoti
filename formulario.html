@@ -33,7 +33,14 @@
         <fieldset>
 
             <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" placeholder="Introduce tu edad"><br><br>
+            <select id="edad" name="edad" placeholder="Introduce tu edad">
+                <option value="" selected>Introduce si eres mayor o menor de edad</option>
+
+                <option value="menor de edad">Menor de edad</option>
+
+                <option value="mayor de edad">Mayor de edad</option>
+
+            </select>
 
         </fieldset>
 
@@ -49,13 +56,11 @@
                 
                 <option value="Reino Unido">Reino Unido</option>
 
-                <option value="Otros">Otro (introdúcelo)</option>
-
-                <input type="text" id="otro" name="otro" placeholder="Introduce otro país"><br><br>
+                <option value="Otros">Otro</option>
 
             </select><br><br>
 
-            <fieldset>
+        <fieldset>
 
             <fieldset>
 
@@ -64,13 +69,22 @@
 
             </fieldset>
 
-            <fieldset>
+        <fieldset>
 
                 <label for="intereses">Intereses</label><br>
-                <textarea name="intereses" id="intereses" cole="00" rows="4" placeholder="Introduce tus intereses:"></textarea>
+                <select id="intereses" id="intereses" placeholder="Introduce tus intereses">
+                
+                <option value="artista y contenido">Intereses sobre la artista y contenido</option>
+
+                <option value="merchandising">Intereses sobre merchandising</option>
+
+                <option value="otros">Otros intereses</option>
+
+                </select>
+
                 <br>
             
-            </fieldset>
+        </fieldset>
             <button type="submit">Enviar</button>
         </fieldset>
     </form>
